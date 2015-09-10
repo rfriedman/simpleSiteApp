@@ -1,0 +1,17 @@
+<div class="container" ng-controller="mainSiteController">
+<article>
+	  <div><h1><span class="glyphicon glyphicon-book"></span> 
+	  	<small>{{article.articletitle}}</small></h1>
+	  </div>
+
+
+	<section>
+	  <div class="row" ng-repeat='item in section'>
+ 	
+		<div class="col-md-12"><h2><small>{{item.sectionheading}}</small></h2></div>
+		<div class="col-md-4"><p>{{item.sectionbody}}</p></div>
+	
+	  </div>
+	 </section>
+</article>
+</div>

@@ -1,0 +1,14 @@
+<div class="container" ng-controller='mainSiteController'>
+    
+<div class="row">
+  <div class="list-group" >
+  	     <div class="col-md-6">   <a href="#" class="list-group-item active">
+            <span class="glyphicon glyphicon-book"></span> Contacts <span class="badge">Support</span>
+        </a>
+        <a href="#" class="list-group-item" ng-repeat="contact in contacts">
+            <span class="glyphicon glyphicon-file"></span> {{contact.firstname}} <span class="badge">555-1212</span>
+        </a></div>
+    </div>
+      </div>
+</div>
+
