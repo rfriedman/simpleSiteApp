@@ -4,15 +4,17 @@
 
 describe('filter', function() {
 
-  beforeEach(module('phonecatFilters'));
+  describe('siteControllers', function(){
 
 
-  describe('checkmark', function() {
+    it('should be a test ', function() {
+      expect(true).toEqual(true);
 
-    it('should convert boolean values to unicode checkmark or cross',
-        inject(function(checkmarkFilter) {
-      expect(checkmarkFilter(true)).toBe('\u2713');
-      expect(checkmarkFilter(false)).toBe('\u2718');
-    }));
-  });
+    });
+
+
+    it('should be another test', function() {
+      expect(true).toEqual(true);
+    });
+  }); 
 });

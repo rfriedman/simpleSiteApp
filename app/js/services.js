@@ -218,13 +218,16 @@ service.putData =function(siteData){
 		anyncModelData = modelInterface.initData();
 	}
 	
+	asyncModel.domainModel = function (value){
+		return modelInterface.domainModel(value);
+	}
 
 	asyncModel.init = function(){
 
 		var deffered = $q.defer();
 		anyncModelData.then(
 			function(resolve){
-				deffered.resolve(modelInterface.domainModel(resolve.data.site));
+				deffered.resolve(asyncModel.domainModel(resolve.data.site));
 		},function(reject){
 				console.log(reject.statusText);
 		})

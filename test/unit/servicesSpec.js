@@ -1,12 +1,18 @@
 'use strict';
 
-describe('service', function() {
+describe('siteService', function() {
 
-  // load modules
-  beforeEach(module('phonecatApp'));
+  describe('modelService', function(){
 
-  // Test service availability
-  it('check the existence of Phone factory', inject(function(Phone) {
-      expect(Phone).toBeDefined();
-    }));
+
+    it('should be a test ', function() {
+      expect(true).toEqual(true);
+
+    });
+
+
+    it('should be another test', function() {
+      expect(true).toEqual(true);
+    });
+  });
 });

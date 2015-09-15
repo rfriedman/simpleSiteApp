@@ -1,6 +1,6 @@
 angular.module('siteControllers',[])
 
-.controller('mainSiteController',['modelService', '$scope','siteConfig',function(modelService,$scope,siteConfig){
+.controller('mainSiteController',['modelService', '$scope',function(modelService,$scope){
 //var s = siteStage('json/site.json');
 	
 
@@ -14,12 +14,8 @@ modelService.init().then(
 		$scope.contacts = $scope.data.contacts();
 	
 },function(response){
-
+	$scope.error = response;
 })    
-
-	
-
-
 
 }])
 
